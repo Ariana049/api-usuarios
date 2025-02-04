@@ -2,6 +2,10 @@ package com.trainibit.first_api.repository;
 
 import com.trainibit.first_api.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+<<<<<<< HEAD
+=======
+import org.springframework.lang.NonNull;
+>>>>>>> c572bc0 (primera api)
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -9,8 +13,15 @@ import java.util.UUID;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
+<<<<<<< HEAD
     @SuppressWarnings("null")
     List<User> findAll();
     User findByUuid(UUID uuid);
     void deleteByUuid(UUID uuid); // No funciona
+=======
+    @NonNull
+    List<User> findAll();
+
+    User findByUuid(UUID uuid);
+>>>>>>> c572bc0 (primera api)
 }
