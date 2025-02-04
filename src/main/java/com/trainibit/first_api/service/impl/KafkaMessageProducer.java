@@ -1,6 +1,6 @@
-package com.trainibit.first_api.service;
+package com.trainibit.first_api.service.impl;
 
-import com.telecom.gastos.config.KafkaTopicConfig;
+import com.trainibit.first_api.config.KafkaTopicConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 import org.springframework.kafka.core.KafkaTemplate;

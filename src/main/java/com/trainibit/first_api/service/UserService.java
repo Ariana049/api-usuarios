@@ -9,13 +9,6 @@ import java.util.UUID;
 
 public interface UserService {
     List<UserResponse> getAll();
-<<<<<<< HEAD
-    UserResponse getByUuid(UUID id);
-    UserResponse createUser(UserRequestPost userRequestPost);
-    UserResponse deleteUser(UUID uuid);
-    UserResponse updateUser(UUID uuid, UserRequestPut userRequestPost);
-}
-=======
 
     UserResponse getByUuid(UUID id);
 
@@ -25,4 +18,3 @@ public interface UserService {
 
     UserResponse updateUser(UUID uuid, UserRequestPut userRequestPost);
 }
->>>>>>> c572bc0 (primera api)

@@ -7,14 +7,7 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class RestTemplateConfig {
     @Bean
-<<<<<<< HEAD
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
-}
-=======
     RestTemplate restTemplate() {
         return new RestTemplate();
     }
 }
->>>>>>> c572bc0 (primera api)

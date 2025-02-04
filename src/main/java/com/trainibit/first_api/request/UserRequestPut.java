@@ -1,22 +1,5 @@
 package com.trainibit.first_api.request;
 
-<<<<<<< HEAD
-import lombok.Getter;
-import lombok.Setter;
-
-import java.time.LocalDate;
-
-@Getter
-@Setter
-public class UserRequestPut {
-    private String firstName;
-    private String lastName;
-    private String email;
-    private LocalDate birthdate;
-    private String planet;
-
-    public UserRequestPut(String firstName, String lastName, String email, LocalDate birthdate, String planet) {
-=======
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -43,18 +26,12 @@ public class UserRequestPut {
     private ArrayList<RoleUserRequestPut> roles;
     
     public UserRequestPut(String firstName, String lastName, String email, String birthdate, String planet, String federalStateUuid, ArrayList<RoleUserRequestPut> roles) {
->>>>>>> c572bc0 (primera api)
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.birthdate = birthdate;
         this.planet = planet;
-<<<<<<< HEAD
-    }
-}
-=======
         this.federalStateUuid = federalStateUuid;
         this.roles = roles;
     }
 }
->>>>>>> c572bc0 (primera api)
